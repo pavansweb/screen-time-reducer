@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screen Time Reduction App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="top-bar">
+        <div class="container">
+            <div class="menu-icon" onclick="toggleNav()">&#9776;</div>
+            <div class="app-name">Screen Time App</div>
+            <div class="user-profile">Pavan</div>
+        </div>
+    </header>
+    <nav class="side-nav" id="sideNav">
+        <div class="container">
+            <h2>Screen Time Manager</h2>
+            <div class="profile-pic">
+                <img src="https://cdn.dribbble.com/userupload/11764588/file/original-4165ef475e94ba4104940d4cdab8f760.png" alt="Profile Picture">
+            </div>
+            <div class="nav-buttons">
+              <a href="https://www.instagram.com/pavan._.hegde"><button>Instagram</button></a>
+              <a href="https://pavansweb.github.io/HorizonTunesApp/webPage/contactPage.html"><button>Contact us</button></a>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <section class="screen-time">
+            <h2>Screen Time</h2>
+            <p>Today: 2 hours 30 minutes</p>
+        </section>
+        <section class="tasks">
+            <h2>Tasks</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Task</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="taskDisplay">
+                    <!-- Tasks will be dynamically added here -->
+                </tbody>
+            </table>
+        </section>
+    </div>
+    <script src="script.js"></script>
+    <script>
+       
+    </script>
+</body>
+</html>

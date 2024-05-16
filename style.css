@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+
+.top-bar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top-bar {
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 0;
+    padding-top: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    z-index: 1000;
+}
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.app-name {
+    font-size: 20px;
+}
+
+.user-profile {
+    font-size: 16px;
+}
+
+.screen-time, .tasks {
+    margin-top: 80px;
+}
+
+.screen-time h2, .tasks h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.task-table-container {
+    overflow: auto;
+}
+
+.task-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+
+.side-nav {
+    position: fixed;
+    top: 0;
+    left: -300px; /* Initially hide the side nav */
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    padding-top: 60px;
+    transition: left 0.3s ease;
+}
+
+.side-nav .container {
+    text-align: center;
+}
+
+.side-nav h2 {
+    margin-bottom: 20px;
+}
+
+.profile-pic img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.nav-buttons button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.nav-buttons button:hover {
+    background-color: #0056b3;
+}
+
+.task-button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.task-button:hover {
+    background-color: #0056b3;
+}
