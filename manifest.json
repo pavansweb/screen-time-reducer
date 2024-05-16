@@ -1,0 +1,27 @@
+{
+  "name": "Screen time reducer",
+  "short_name": "STR",
+  "description": "Do pushups to unlock your phone",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#00ffff",
+  "theme_color": "#00ffff",
+  "icons": [
+    {
+      "src": "logo/icon(600x600).JPG",
+      "sizes": "600x600",
+      "type": "image/jpe"
+    }
+  ],
+  "splash_screen": {
+    "icons": [
+      {
+        "src": "logo/splash-screen(1700x2800).png",
+        "sizes": "1700x2800",
+        "type": "image/png"
+      }
+    ],
+    "background_color": "#00ffff",
+    "resize_mode": "cover"
+  }
+}

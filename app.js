@@ -2,8 +2,8 @@ window.onload = function() {
     const menuIcon = document.querySelector(".menu-icon");
     const sideNav = document.getElementById("sideNav");
     const taskButtons = document.querySelectorAll(".task-button");
-    
-  
+
+
     // Add click event listener to menu icon
     menuIcon.addEventListener("click", function() {
         toggleNav();
@@ -20,15 +20,15 @@ window.onload = function() {
 
     // Sample tasks data (replace with your actual tasks data)
     const tasksData = [
-        
+
         {task: "Do 10 pushups", status: "0/10"},
         {task: "Do 10 pushups", status: "0/10"},
         {task: "Do 10 pushups", status: "0/10"},
         {task: "Do 10 pushups", status: "0/10"},
         {task: "Do 10 pushups", status: "0/10"},
         {task: "Do 10 pushups", status: "0/10"},
-        
-    
+
+
     ];
 
     const taskDisplay = document.getElementById("taskDisplay");
@@ -50,8 +50,8 @@ window.onload = function() {
         });
     }
 
-    
-    
+
+
 
     // Function to handle task button click and navigate to different window
     function handleTaskButtonClick(index) {

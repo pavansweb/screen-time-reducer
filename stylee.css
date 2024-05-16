@@ -77,7 +77,7 @@ th {
 .side-nav {
     position: fixed;
     top: 0;
-    left: -300px; /* Initially hide the side nav */
+    left: -300px; 
     width: 250px;
     height: 100%;
     background-color: #333;
@@ -132,3 +132,4 @@ th {
 .task-button:hover {
     background-color: #0056b3;
 }
+
