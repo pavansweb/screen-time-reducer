@@ -1,0 +1,169 @@
+/* Reset default browser styles */
+* {
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+
+/* Remove default underline from links */
+a {
+    text-decoration: none;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent; /* For iOS Safari */
+    tap-highlight-color: transparent; /* For modern browsers */
+    overscroll-behavior-y: contain;
+}
+
+/* Container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Top bar */
+.top-bar {
+    background-color: #007bff;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    z-index: 1000;
+}
+
+.top-bar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.menu-icon.clicked {
+    color: #00f5f5; /* Change the color to indicate click */
+}
+
+.app-name {
+    font-size: 20px;
+}
+
+.user-profile {
+    font-size: 16px;
+}
+
+/* Content sections */
+.screen-time,
+.tasks {
+    margin-top: 80px;
+}
+
+.screen-time h2,
+.tasks h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Tasks table */
+.tasks {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: auto;
+    padding-right: auto;
+}
+
+.task-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Side navigation */
+.side-nav {
+    position: fixed;
+    top: 0;
+    left: -300px; 
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    padding-top: 60px;
+    transition: left 0.3s ease;
+}
+
+.side-nav .container {
+    text-align: center;
+}
+
+.side-nav h2 {
+    margin-bottom: 20px;
+}
+
+.profile-pic img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.nav-buttons button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.nav-buttons button:hover {
+    background-color: #0056b3;
+}
+
+.task-button {
+    width: 100%;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.task-button:hover {
+    background-color: #0056b3;
+}

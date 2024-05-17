@@ -1,6 +1,6 @@
 * {
-  -webkit-tap-highlight-color: transparent;
-  outline: none;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
 }
 
 body {
@@ -31,8 +31,6 @@ body {
 .top-bar {
     background-color: #007bff;
     color: #fff;
-    padding: 5px 0;
-    padding-top: 10px;
     position: fixed;
     top: 0;
     left: 0;
@@ -52,36 +50,6 @@ body {
 .user-profile {
     font-size: 16px;
 }
-
-.screen-time, .tasks {
-    margin-top: 80px;
-}
-
-.screen-time h2, .tasks h2 {
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.task-table-container {
-    overflow: auto;
-}
-
-.task-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
-}
-
-th {
-    background-color: #007bff;
-    color: #fff;
-}
-
 
 .side-nav {
     position: fixed;
@@ -104,13 +72,6 @@ th {
     margin-bottom: 20px;
 }
 
-.profile-pic img {
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    margin-bottom: 20px;
-}
-
 .nav-buttons button {
     display: block;
     width: 100%;
@@ -127,18 +88,18 @@ th {
     background-color: #0056b3;
 }
 
-.task-button {
-    padding: 8px 16px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 15px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+.about {
+    margin-top: 100px;
+    text-align: center;
 }
 
-.task-button:hover {
-    background-color: #0056b3;
+.about h1 {
+    color: #333;
+    margin-bottom: 20px;
 }
 
+.about p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+}
