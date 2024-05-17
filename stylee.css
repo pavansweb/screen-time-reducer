@@ -1,18 +1,27 @@
+* {
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
     margin: 0;
     padding: 0;
     overflow-y: scroll;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent; /* For iOS Safari */
+    tap-highlight-color: transparent; /* For modern browsers */
 }
 
 .container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
+    box-sizing: border-box;
 }
-
-
 
 .top-bar .container {
     display: flex;

@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Screen Time Reduction App</title>
-    <link rel="stylesheet" href="stylee.css">
-    <!-- <link rel="manifest" href="/manifest.json"> -->
-
-
-    
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Screen Time Reduction App</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="manifest" href="/manifest.json">
+    </head>
 <body>
     <header class="top-bar">
         <div class="container">
@@ -52,6 +49,19 @@
         </section>
     </div>
     <script async src="app.js"> </script>
-    
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then(registration => {
+              console.log('Service Worker registered with scope:', registration.scope);
+            })
+            .catch(error => {
+              console.error('Service Worker registration failed:', error);
+            });
+        });
+      }
+    </script>
+
 </body>
 </html>
